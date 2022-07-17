@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --i: 275;
+        }
+
+        body {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: hsl(var(--i) 70% 15%);
+            transform-style: preserve-3d;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-weight: 800;
+            font-size: 8rem;
+            text-transform: uppercase;
+            color: hsl(var(--i) 90% 90%);
+            transform: rotateX(-15deg) rotateY(15deg);
+            text-shadow:
+                5px 5px 0px hsl(var(--i) 70% 75%),
+                10px 10px 0px hsl(var(--i) 70% 65%),
+                15px 15px 0px hsl(var(--i) 70% 55%),
+                20px 20px 0px hsl(var(--i) 70% 45%),
+                25px 25px 0px hsl(var(--i) 70% 35%);
+            animation: wavy ease-in-out .5s infinite;
+        }
+
+        @keyframes wavy {
+            0% {
+                text-shadow:
+                5px 5px 0px hsl(var(--i) 70% 75%),
+                10px 10px 0px hsl(var(--i) 70% 65%),
+                15px 15px 0px hsl(var(--i) 70% 55%),
+                20px 20px 0px hsl(var(--i) 70% 45%),
+                25px 25px 0px hsl(var(--i) 70% 35%);
+                
+            }
+
+            50% {
+                text-shadow:
+
+                8px 8px 0px hsl(var(--i) 70% 75%),
+                13px 13px 0px hsl(var(--i) 70% 65%),
+                18px 18px 0px hsl(var(--i) 70% 55%),
+                23px 23px 0px hsl(var(--i) 70% 45%),
+                28px 28px 0px hsl(var(--i) 70% 35%);
+            }
+
+            100% {
+                text-shadow:
+                5px 5px 0px hsl(var(--i) 70% 75%),
+                10px 10px 0px hsl(var(--i) 70% 65%),
+                15px 15px 0px hsl(var(--i) 70% 55%),
+                20px 20px 0px hsl(var(--i) 70% 45%),
+                25px 25px 0px hsl(var(--i) 70% 35%);
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yoooooooo!!</h1>
+</body>
+
+</html>
